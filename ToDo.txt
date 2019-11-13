@@ -1,0 +1,5 @@
+1. Design User and Admin Dashboard using forms
+2. Create a database for the billing system
+3. Connect application to databas by connection String
+4. Create a form for User Module
+5. Creare Business Logic layer for the User module
