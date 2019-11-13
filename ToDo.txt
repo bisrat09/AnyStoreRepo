@@ -2,4 +2,5 @@
 2. Create a database for the billing system
 3. Connect application to databas by connection String
 4. Create a form for User Module
-5. Creare Business Logic layer for the User module
+5. Create Business Logic layer(BLL) for the User module
+6. Create ADD,UPDTAE,DELETE methods in Data Logic Layer (DLL) for User module
