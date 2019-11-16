@@ -53,7 +53,7 @@
             this.pnlFooter.Location = new System.Drawing.Point(0, 678);
             this.pnlFooter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(1408, 59);
+            this.pnlFooter.Size = new System.Drawing.Size(1294, 59);
             this.pnlFooter.TabIndex = 0;
             // 
             // lblFooter
@@ -78,7 +78,7 @@
             this.transactionsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-            this.menuStripTop.Size = new System.Drawing.Size(1408, 28);
+            this.menuStripTop.Size = new System.Drawing.Size(1294, 28);
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
             // 
@@ -138,7 +138,7 @@
             this.lblAppFName.AutoSize = true;
             this.lblAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppFName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAppFName.Location = new System.Drawing.Point(702, 318);
+            this.lblAppFName.Location = new System.Drawing.Point(674, 318);
             this.lblAppFName.Name = "lblAppFName";
             this.lblAppFName.Size = new System.Drawing.Size(84, 45);
             this.lblAppFName.TabIndex = 4;
@@ -149,7 +149,7 @@
             this.lblLName.AutoSize = true;
             this.lblLName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLName.Location = new System.Drawing.Point(774, 318);
+            this.lblLName.Location = new System.Drawing.Point(749, 318);
             this.lblLName.Name = "lblLName";
             this.lblLName.Size = new System.Drawing.Size(122, 45);
             this.lblLName.TabIndex = 5;
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1408, 737);
+            this.ClientSize = new System.Drawing.Size(1294, 737);
             this.Controls.Add(this.lblSHead);
             this.Controls.Add(this.lblLName);
             this.Controls.Add(this.lblAppFName);
