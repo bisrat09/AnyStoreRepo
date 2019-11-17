@@ -328,6 +328,7 @@
             this.dgvUsers.RowTemplate.Height = 24;
             this.dgvUsers.Size = new System.Drawing.Size(615, 392);
             this.dgvUsers.TabIndex = 23;
+            this.dgvUsers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvUsers_RowHeaderMouseClick);
             // 
             // btnAdd
             // 
@@ -340,6 +341,7 @@
             this.btnAdd.TabIndex = 24;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -352,6 +354,7 @@
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -365,6 +368,7 @@
             this.btnDelete.TabIndex = 26;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // txtUserID
             // 

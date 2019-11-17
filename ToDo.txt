@@ -4,3 +4,4 @@
 4. Create a form for User Module
 5. Create Business Logic layer(BLL) for the User module
 6. Create ADD,UPDTAE,DELETE methods in Data Logic Layer (DLL) for User module
+7. Adding ADD,UPDATE,and DELETE functionality in USer Module
