@@ -149,7 +149,7 @@ namespace AnyStore.DAL
             return isSuccess;
         }
         #endregion
-        #region Delete Data from DAtabase
+        #region Delete Data from Database
         public bool Delete(userBLL u)
         {
             bool isSuccess = false;

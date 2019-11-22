@@ -19,6 +19,5 @@ C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.frmUserDa
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.Properties.Resources.resources
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmUsers.resources
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.csproj.GenerateResource.cache
-C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.csproj.CoreCompileInputs.cache
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.exe
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.pdb
