@@ -53,7 +53,11 @@
             this.pnlFooter.Location = new System.Drawing.Point(0, 678);
             this.pnlFooter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlFooter.Name = "pnlFooter";
+<<<<<<< HEAD
             this.pnlFooter.Size = new System.Drawing.Size(1409, 59);
+=======
+            this.pnlFooter.Size = new System.Drawing.Size(1294, 59);
+>>>>>>> master
             this.pnlFooter.TabIndex = 0;
             // 
             // lblFooter
@@ -78,7 +82,11 @@
             this.transactionsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
+<<<<<<< HEAD
             this.menuStripTop.Size = new System.Drawing.Size(1409, 28);
+=======
+            this.menuStripTop.Size = new System.Drawing.Size(1294, 28);
+>>>>>>> master
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
             // 
@@ -170,7 +178,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1409, 737);
+=======
+            this.ClientSize = new System.Drawing.Size(1294, 737);
+>>>>>>> master
             this.Controls.Add(this.lblSHead);
             this.Controls.Add(this.lblLName);
             this.Controls.Add(this.lblAppFName);
