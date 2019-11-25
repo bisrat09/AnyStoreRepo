@@ -196,5 +196,24 @@ namespace AnyStore.UI
             
 
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            //get keyword from text box
+            string keywords = txtSearch.Text;
+            //check if keywords has value 
+            if (keywords!= null)
+            {
+                //show user based on keywords
+                DataTable dt = dal.Search(keywords);
+                dgvUsers.DataSource = dt;
+            }
+            else
+            {
+                //show all users from Database
+                DataTable dt = dal.Select();
+                dgvUsers.DataSource = dt;
+            }
+        }
     }
 }

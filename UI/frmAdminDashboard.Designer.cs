@@ -53,11 +53,7 @@
             this.pnlFooter.Location = new System.Drawing.Point(0, 678);
             this.pnlFooter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlFooter.Name = "pnlFooter";
-<<<<<<< HEAD
-            this.pnlFooter.Size = new System.Drawing.Size(1409, 59);
-=======
-            this.pnlFooter.Size = new System.Drawing.Size(1294, 59);
->>>>>>> master
+            this.pnlFooter.Size = new System.Drawing.Size(761, 59);
             this.pnlFooter.TabIndex = 0;
             // 
             // lblFooter
@@ -82,43 +78,39 @@
             this.transactionsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-<<<<<<< HEAD
-            this.menuStripTop.Size = new System.Drawing.Size(1409, 28);
-=======
-            this.menuStripTop.Size = new System.Drawing.Size(1294, 28);
->>>>>>> master
+            this.menuStripTop.Size = new System.Drawing.Size(761, 28);
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.UsersToolStripMenuItem_Click);
             // 
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.categoryToolStripMenuItem.Text = "Category";
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.productToolStripMenuItem.Text = "Product";
             // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
             // transactionsToolStripMenuItem
             // 
             this.transactionsToolStripMenuItem.Name = "transactionsToolStripMenuItem";
-            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.transactionsToolStripMenuItem.Text = "Transactions";
             // 
             // lblUser
@@ -178,11 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1409, 737);
-=======
-            this.ClientSize = new System.Drawing.Size(1294, 737);
->>>>>>> master
+            this.ClientSize = new System.Drawing.Size(761, 737);
             this.Controls.Add(this.lblSHead);
             this.Controls.Add(this.lblLName);
             this.Controls.Add(this.lblAppFName);
