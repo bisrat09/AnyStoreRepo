@@ -71,6 +71,9 @@ namespace AnyStore.UI
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
+            
+            string loggedUser = frmLogin.loggedIn;
+
             //getting data from UI
             u.first_name = txtFirstName.Text;
             u.last_name = txtLastName.Text;
@@ -82,8 +85,10 @@ namespace AnyStore.UI
             u.gender = cmbGender.Text;
             u.user_type = cmbUserType.Text;
             u.added_date = DateTime.Now;
-            // change 1. when login form is done 
-            u.added_by = 1;
+            userBLL usr = dal.GetIDFromUsername(loggedUser);
+
+            // get username of the logged in user
+            u.added_by = usr.id;
 
             //inserting data into database
             bool success = dal.Insert(u);

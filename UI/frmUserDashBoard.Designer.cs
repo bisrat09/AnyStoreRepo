@@ -52,26 +52,26 @@
             this.inventoryToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-            this.menuStripTop.Size = new System.Drawing.Size(1481, 28);
+            this.menuStripTop.Size = new System.Drawing.Size(1481, 30);
             this.menuStripTop.TabIndex = 0;
             this.menuStripTop.Text = "menuStrip1";
             // 
             // purchaseToolStripMenuItem
             // 
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
-            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
             this.purchaseToolStripMenuItem.Text = "Purchase";
             // 
             // salesToolStripMenuItem
             // 
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(57, 26);
             this.salesToolStripMenuItem.Text = "Sales";
             // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
             // lblSHead
@@ -114,9 +114,8 @@
             this.lblLoggedInUser.ForeColor = System.Drawing.Color.LimeGreen;
             this.lblLoggedInUser.Location = new System.Drawing.Point(61, 60);
             this.lblLoggedInUser.Name = "lblLoggedInUser";
-            this.lblLoggedInUser.Size = new System.Drawing.Size(56, 23);
+            this.lblLoggedInUser.Size = new System.Drawing.Size(0, 23);
             this.lblLoggedInUser.TabIndex = 8;
-            this.lblLoggedInUser.Text = "Bisrat";
             this.lblLoggedInUser.Click += new System.EventHandler(this.LblLoggedInUser_Click);
             // 
             // lblUser
@@ -169,6 +168,7 @@
             this.Text = "User Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUserDashBoard_FormClosed);
+            this.Load += new System.EventHandler(this.frmUserDashBoard_Load);
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
             this.pnlFooter.ResumeLayout(false);
