@@ -53,7 +53,7 @@
             this.pnlFooter.Location = new System.Drawing.Point(0, 678);
             this.pnlFooter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(761, 59);
+            this.pnlFooter.Size = new System.Drawing.Size(1283, 59);
             this.pnlFooter.TabIndex = 0;
             // 
             // lblFooter
@@ -78,7 +78,7 @@
             this.transactionsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-            this.menuStripTop.Size = new System.Drawing.Size(761, 28);
+            this.menuStripTop.Size = new System.Drawing.Size(1283, 28);
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
             // 
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 737);
+            this.ClientSize = new System.Drawing.Size(1283, 737);
             this.Controls.Add(this.lblSHead);
             this.Controls.Add(this.lblLName);
             this.Controls.Add(this.lblAppFName);
@@ -186,6 +186,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAdminDashboard_FormClosed);
             this.Load += new System.EventHandler(this.FrmAdminDashboard_Load);
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
