@@ -20,6 +20,7 @@ namespace AnyStore
 
         private void FrmAdminDashboard_Load(object sender, EventArgs e)
         {
+            lblLoggedInUser.Text = frmLogin.loggedIn;
 
         }
 

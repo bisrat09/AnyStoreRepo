@@ -29,5 +29,10 @@ namespace AnyStore
             login.Show();
             this.Hide();
         }
+
+        private void frmUserDashBoard_Load(object sender, EventArgs e)
+        {
+            lblLoggedInUser.Text = frmLogin.loggedIn;
+        }
     }
 }
