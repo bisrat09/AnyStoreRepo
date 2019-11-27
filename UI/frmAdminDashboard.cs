@@ -36,5 +36,11 @@ namespace AnyStore
             login.Show();
             this.Hide();
         }
+
+        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCategories category = new frmCategories();
+            category.Show();
+        }
     }
 }

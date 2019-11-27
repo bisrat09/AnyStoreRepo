@@ -78,39 +78,40 @@
             this.transactionsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-            this.menuStripTop.Size = new System.Drawing.Size(1283, 30);
+            this.menuStripTop.Size = new System.Drawing.Size(1283, 28);
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.UsersToolStripMenuItem_Click);
             // 
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.categoryToolStripMenuItem.Text = "Category";
+            this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(74, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.productToolStripMenuItem.Text = "Product";
             // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
             // transactionsToolStripMenuItem
             // 
             this.transactionsToolStripMenuItem.Name = "transactionsToolStripMenuItem";
-            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(104, 26);
+            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.transactionsToolStripMenuItem.Text = "Transactions";
             // 
             // lblUser
