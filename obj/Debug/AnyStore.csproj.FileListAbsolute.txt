@@ -22,3 +22,4 @@ C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.csproj.Ge
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.exe
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.pdb
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmLogin.resources
+C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmCategories.resources

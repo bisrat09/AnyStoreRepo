@@ -5,3 +5,16 @@
 5. Create Business Logic layer(BLL) for the User module
 6. Create ADD,UPDTAE,DELETE methods in Data Logic Layer (DLL) for User module
 7. Adding ADD,UPDATE,and DELETE functionality in USer Module
+8. Adding Search feature in USER module	
+9. Designing Login Form for Billing system
+10. Adding Login functionality in Billing System
+11. Displaying username of loggedin USER in Admin/USER Dashboard
+12. Designing form for Category module
+13. Creating Getters and setters in BLL for Category module
+14. Creating ADD/UPDATE/DELETE method in DAL for Category module
+15. Adding ADD/UPDATE/DELETE functionality in Category module
+16. Adding Search functionality in Category module
+17. Designing form for Product module
+18. Creating getters/setters for Product module in BLL
+19. Creating ADD/UPDATE/DELETE method in DAL for Product module
+20. Displaying Categories from database into combobox
