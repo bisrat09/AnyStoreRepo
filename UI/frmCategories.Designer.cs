@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCategories));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTop = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.lblTop = new System.Windows.Forms.Label();
             this.lblCategoryID = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
@@ -57,8 +57,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(994, 40);
+            this.panel1.Size = new System.Drawing.Size(1194, 40);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
+            this.pictureBoxClose.Location = new System.Drawing.Point(1164, 3);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(27, 28);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 1;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // lblTop
             // 
@@ -69,17 +80,6 @@
             this.lblTop.Size = new System.Drawing.Size(123, 28);
             this.lblTop.TabIndex = 0;
             this.lblTop.Text = "CATEGORIES";
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-            this.pictureBoxClose.Location = new System.Drawing.Point(958, 9);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(27, 28);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 1;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // lblCategoryID
             // 
@@ -117,7 +117,7 @@
             this.txtCategoryID.Location = new System.Drawing.Point(162, 66);
             this.txtCategoryID.Name = "txtCategoryID";
             this.txtCategoryID.ReadOnly = true;
-            this.txtCategoryID.Size = new System.Drawing.Size(219, 30);
+            this.txtCategoryID.Size = new System.Drawing.Size(276, 30);
             this.txtCategoryID.TabIndex = 4;
             // 
             // txtTitle
@@ -125,7 +125,7 @@
             this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitle.Location = new System.Drawing.Point(162, 112);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(219, 30);
+            this.txtTitle.Size = new System.Drawing.Size(276, 30);
             this.txtTitle.TabIndex = 5;
             // 
             // txtDescription
@@ -134,7 +134,7 @@
             this.txtDescription.Location = new System.Drawing.Point(162, 160);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(219, 121);
+            this.txtDescription.Size = new System.Drawing.Size(276, 121);
             this.txtDescription.TabIndex = 6;
             // 
             // btnAdd
@@ -148,6 +148,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -160,6 +161,7 @@
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -173,6 +175,7 @@
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgvCategories
             // 
@@ -181,8 +184,9 @@
             this.dgvCategories.Name = "dgvCategories";
             this.dgvCategories.RowHeadersWidth = 51;
             this.dgvCategories.RowTemplate.Height = 24;
-            this.dgvCategories.Size = new System.Drawing.Size(391, 169);
+            this.dgvCategories.Size = new System.Drawing.Size(503, 169);
             this.dgvCategories.TabIndex = 10;
+            this.dgvCategories.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCategories_RowHeaderMouseClick);
             // 
             // lblSearch
             // 
@@ -199,7 +203,7 @@
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(597, 72);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(328, 30);
+            this.txtSearch.Size = new System.Drawing.Size(440, 30);
             this.txtSearch.TabIndex = 12;
             // 
             // frmCategories
@@ -207,7 +211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(994, 434);
+            this.ClientSize = new System.Drawing.Size(1194, 434);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.dgvCategories);

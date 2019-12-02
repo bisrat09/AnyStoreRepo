@@ -25,8 +25,8 @@ namespace AnyStore.DAL
             {
                 // sql query to get all the data from the database 
                 string sql = "select * from tbl_categories";
-                SqlCommand cmd = new SqlCommand();
-                SqlDataAdapter adapter = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand(sql,conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 // open database coonection
                 conn.Open();
                 // adding value from adapter to datatable dt
@@ -56,7 +56,7 @@ namespace AnyStore.DAL
             try
             {
                 // query to add new category
-                string sql = "insert into tbl_categories (title,description,addedd_date,added_by) values (@title,@description,@addedd_date,@added_by)";
+                string sql = "insert into tbl_categories (title,description,added_date,added_by) values (@title,@description,@added_date,@added_by)";
                 //creating sql command to pass values in our query
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //passing values through parameter
@@ -152,7 +152,7 @@ namespace AnyStore.DAL
             try
             {
                 // SQL query to Delete from Database
-                string sql = "Ddelete from tbl_categories where id=@id";
+                string sql = "delete from tbl_categories where id=@id";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //Passing the value using cmd
                 cmd.Parameters.AddWithValue("@id", c.id);
