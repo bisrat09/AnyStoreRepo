@@ -112,7 +112,7 @@ namespace AnyStore.DAL
             try
             {
                 // sql query to update data to db
-                String sql = "Update tbl_products set name =@name, category=@category, description=@description, rate=@rate, qty=@qty, added_date@added_date, added_by=@added_by where id =@id";
+                String sql = "Update tbl_products set name =@name, category=@category, description=@description, rate=@rate, added_date=@added_date, added_by=@added_by where id =@id";
 
                 // create sql command the value to query
                 SqlCommand cmd = new SqlCommand(sql, conn);
