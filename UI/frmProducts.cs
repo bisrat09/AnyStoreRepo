@@ -166,5 +166,24 @@ namespace AnyStore.UI
                 MessageBox.Show("Failed to Delete Product");
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // get keywords from form 
+            string keywords = txtSearch.Text;
+            if ( keywords!= null)
+            {
+                //search the products 
+                DataTable dt = pdal.Search(keywords);
+                dgvProducts.DataSource = dt;
+
+            }
+            else
+            {
+                //display all the products 
+                DataTable dt = pdal.Select();
+                dgvProducts.DataSource = dt;
+            }
+        }
     }
 }
