@@ -75,7 +75,7 @@ namespace AnyStore.DAL
                 // passing the values using Parameters
                 cmd.Parameters.AddWithValue("@type", dc.type);
                 cmd.Parameters.AddWithValue("@name", dc.name);
-                cmd.Parameters.AddWithValue("@email", dc.name);
+                cmd.Parameters.AddWithValue("@email", dc.email);
                 cmd.Parameters.AddWithValue("@contact", dc.contact);
                 cmd.Parameters.AddWithValue("@address", dc.address);
                 cmd.Parameters.AddWithValue("@added_date", dc.added_date);
@@ -123,7 +123,7 @@ namespace AnyStore.DAL
             try
             {
                 //write sql query to update the database
-                string sql = "Update tbl_dea_cust set type=@type, name=@name, email=@email, contact=@contact, address=@address, added_date=@added_date, added_by=@added_by";
+                string sql = "Update tbl_dea_cust set type=@type, name=@name, email=@email, contact=@contact, address=@address, added_date=@added_date, added_by=@added_by where id=@id";
 
                 // create sql command to pass value in sql
                 SqlCommand cmd = new SqlCommand(sql, conn);
