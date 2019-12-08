@@ -39,6 +39,7 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.lblFooter = new System.Windows.Forms.Label();
+            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripTop.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             this.SuspendLayout();
@@ -49,29 +50,30 @@
             this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.purchaseToolStripMenuItem,
             this.salesToolStripMenuItem,
-            this.inventoryToolStripMenuItem});
+            this.inventoryToolStripMenuItem,
+            this.dealerAndCustomerToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-            this.menuStripTop.Size = new System.Drawing.Size(1481, 30);
+            this.menuStripTop.Size = new System.Drawing.Size(1481, 28);
             this.menuStripTop.TabIndex = 0;
             this.menuStripTop.Text = "menuStrip1";
             // 
             // purchaseToolStripMenuItem
             // 
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
-            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
+            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.purchaseToolStripMenuItem.Text = "Purchase";
             // 
             // salesToolStripMenuItem
             // 
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(57, 26);
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.salesToolStripMenuItem.Text = "Sales";
             // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
             // lblSHead
@@ -150,6 +152,13 @@
             this.lblFooter.TabIndex = 0;
             this.lblFooter.Text = "Developed By: Bisrat Belayneh";
             // 
+            // dealerAndCustomerToolStripMenuItem
+            // 
+            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
+            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
+            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
+            // 
             // frmUserDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -191,5 +200,6 @@
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Panel pnlFooter;
         private System.Windows.Forms.Label lblFooter;
+        private System.Windows.Forms.ToolStripMenuItem dealerAndCustomerToolStripMenuItem;
     }
 }
