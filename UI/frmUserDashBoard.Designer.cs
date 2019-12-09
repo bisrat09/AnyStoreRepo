@@ -32,14 +32,14 @@
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblSHead = new System.Windows.Forms.Label();
-            this.lblLName = new System.Windows.Forms.Label();
-            this.lblAppFName = new System.Windows.Forms.Label();
             this.lblLoggedInUser = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.lblFooter = new System.Windows.Forms.Label();
-            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStripTop.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,13 @@
             this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
+            // dealerAndCustomerToolStripMenuItem
+            // 
+            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
+            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
+            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
+            // 
             // lblSHead
             // 
             this.lblSHead.AutoSize = true;
@@ -86,28 +93,6 @@
             this.lblSHead.Size = new System.Drawing.Size(395, 32);
             this.lblSHead.TabIndex = 11;
             this.lblSHead.Text = "Billing and Inventory Management";
-            // 
-            // lblLName
-            // 
-            this.lblLName.AutoSize = true;
-            this.lblLName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLName.Location = new System.Drawing.Point(918, 347);
-            this.lblLName.Name = "lblLName";
-            this.lblLName.Size = new System.Drawing.Size(122, 45);
-            this.lblLName.TabIndex = 10;
-            this.lblLName.Text = "STORE";
-            // 
-            // lblAppFName
-            // 
-            this.lblAppFName.AutoSize = true;
-            this.lblAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppFName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAppFName.Location = new System.Drawing.Point(837, 347);
-            this.lblAppFName.Name = "lblAppFName";
-            this.lblAppFName.Size = new System.Drawing.Size(84, 45);
-            this.lblAppFName.TabIndex = 9;
-            this.lblAppFName.Text = "ANY";
             // 
             // lblLoggedInUser
             // 
@@ -152,22 +137,37 @@
             this.lblFooter.TabIndex = 0;
             this.lblFooter.Text = "Developed By: Bisrat Belayneh";
             // 
-            // dealerAndCustomerToolStripMenuItem
+            // label1
             // 
-            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
-            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
-            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
-            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(951, 348);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 45);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "STORE";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(789, 348);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 45);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "SOPHIE\'S";
             // 
             // frmUserDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1481, 612);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.lblSHead);
-            this.Controls.Add(this.lblLName);
-            this.Controls.Add(this.lblAppFName);
             this.Controls.Add(this.lblLoggedInUser);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.menuStripTop);
@@ -194,12 +194,12 @@
         private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
         private System.Windows.Forms.Label lblSHead;
-        private System.Windows.Forms.Label lblLName;
-        private System.Windows.Forms.Label lblAppFName;
         private System.Windows.Forms.Label lblLoggedInUser;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Panel pnlFooter;
         private System.Windows.Forms.Label lblFooter;
         private System.Windows.Forms.ToolStripMenuItem dealerAndCustomerToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

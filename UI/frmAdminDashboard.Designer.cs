@@ -34,6 +34,7 @@
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblUser = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.lblAppFName = new System.Windows.Forms.Label();
             this.lblLName = new System.Windows.Forms.Label();
             this.lblSHead = new System.Windows.Forms.Label();
-            this.dealerAndCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlFooter.SuspendLayout();
             this.menuStripTop.SuspendLayout();
             this.SuspendLayout();
@@ -105,6 +105,13 @@
             this.productToolStripMenuItem.Text = "Product";
             this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
+            // dealerAndCustomerToolStripMenuItem
+            // 
+            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
+            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
+            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
+            // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
@@ -141,18 +148,18 @@
             this.lblAppFName.AutoSize = true;
             this.lblAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppFName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAppFName.Location = new System.Drawing.Point(674, 318);
+            this.lblAppFName.Location = new System.Drawing.Point(599, 318);
             this.lblAppFName.Name = "lblAppFName";
-            this.lblAppFName.Size = new System.Drawing.Size(84, 45);
+            this.lblAppFName.Size = new System.Drawing.Size(156, 45);
             this.lblAppFName.TabIndex = 4;
-            this.lblAppFName.Text = "ANY";
+            this.lblAppFName.Text = "SOPHIE\'S";
             // 
             // lblLName
             // 
             this.lblLName.AutoSize = true;
             this.lblLName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLName.Location = new System.Drawing.Point(749, 318);
+            this.lblLName.Location = new System.Drawing.Point(741, 318);
             this.lblLName.Name = "lblLName";
             this.lblLName.Size = new System.Drawing.Size(122, 45);
             this.lblLName.TabIndex = 5;
@@ -168,13 +175,6 @@
             this.lblSHead.Size = new System.Drawing.Size(395, 32);
             this.lblSHead.TabIndex = 6;
             this.lblSHead.Text = "Billing and Inventory Management";
-            // 
-            // dealerAndCustomerToolStripMenuItem
-            // 
-            this.dealerAndCustomerToolStripMenuItem.Name = "dealerAndCustomerToolStripMenuItem";
-            this.dealerAndCustomerToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
-            this.dealerAndCustomerToolStripMenuItem.Text = "Dealer and Customer";
-            this.dealerAndCustomerToolStripMenuItem.Click += new System.EventHandler(this.dealerAndCustomerToolStripMenuItem_Click);
             // 
             // frmAdminDashboard
             // 

@@ -157,5 +157,26 @@ namespace AnyStore.UI
                 MessageBox.Show("Failed to delete Dealer/Customer");
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // get the keyword from text box 
+            string keyword = txtSearch.Text;
+
+            if ( keyword!= null)
+            {
+                //Search dealer or customer  db 
+                DataTable dt = dcDal.Search(keyword);
+                // load the data grid view with data from db
+                dgvDeaCust.DataSource = dt;
+            }
+            else
+            {
+                // Show all the Dealer or customer data 
+                DataTable dt = dcDal.Select();
+                dgvDeaCust.DataSource = dt;
+
+            }
+        }
     }
 }

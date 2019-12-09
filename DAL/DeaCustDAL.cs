@@ -204,6 +204,43 @@ namespace AnyStore.DAL
             return isSuccess;
         }
         #endregion
+        #region SEARCh method for dealer and Customer Module
+        public DataTable Search(string keywords)
+        {
+            // create sql connection
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            // create a data table to return the value
+            DataTable dt = new DataTable();
+            try
+            {
+                // write the Query to Search Dealer or Customer based on id,type, and name
+                string sql = "select * from tbl_dea_cust where id like '%"+keywords+"%' or type like '%"+keywords+"%' or name like '%"+keywords+"%'";
+                
+                // Sql command to excute query
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                
+                // Sql data adapter to hold the data from db temporarily 
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                
+                //open data base connection
+                conn.Open();
+                
+                //pass the value of the adapter to the datatable 
+                adapter.Fill(dt);
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        #endregion
 
     }
 
