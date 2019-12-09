@@ -148,7 +148,7 @@
             this.lblAppFName.AutoSize = true;
             this.lblAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppFName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAppFName.Location = new System.Drawing.Point(599, 318);
+            this.lblAppFName.Location = new System.Drawing.Point(657, 303);
             this.lblAppFName.Name = "lblAppFName";
             this.lblAppFName.Size = new System.Drawing.Size(156, 45);
             this.lblAppFName.TabIndex = 4;
@@ -159,7 +159,7 @@
             this.lblLName.AutoSize = true;
             this.lblLName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblLName.Location = new System.Drawing.Point(741, 318);
+            this.lblLName.Location = new System.Drawing.Point(799, 303);
             this.lblLName.Name = "lblLName";
             this.lblLName.Size = new System.Drawing.Size(122, 45);
             this.lblLName.TabIndex = 5;
@@ -170,7 +170,7 @@
             this.lblSHead.AutoSize = true;
             this.lblSHead.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSHead.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.lblSHead.Location = new System.Drawing.Point(614, 364);
+            this.lblSHead.Location = new System.Drawing.Point(600, 362);
             this.lblSHead.Name = "lblSHead";
             this.lblSHead.Size = new System.Drawing.Size(395, 32);
             this.lblSHead.TabIndex = 6;
