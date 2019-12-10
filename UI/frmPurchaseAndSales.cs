@@ -29,6 +29,7 @@ namespace AnyStore.UI
 
         }
         DeaCustDAL dcDAL = new DeaCustDAL();
+        productsDAL pDAL = new productsDAL();
 
         private void frmPurchaseAndSales_Load(object sender, EventArgs e)
         {
@@ -62,6 +63,30 @@ namespace AnyStore.UI
             txtContact.Text = dc.contact;
             txtAddress.Text = dc.address;
 
+        }
+
+        private void txtSearchProduct_TextChanged(object sender, EventArgs e)
+        {
+            // Get the keyword from productSearch textbox
+            string keyword = txtSearchProduct.Text;
+
+            // check if txtSearchProduct has value
+            if(keyword == "")
+            {
+                txtProductName.Text = "";
+                txtInventory.Text = "";
+                txtRate.Text = "";
+                txtQty.Text = "";
+                return;
+            }
+
+            // search the product and display on respective textboxes 
+           productsBLL p = pDAL.GetProductsForTransaction(keyword);
+
+            // set the values on textboxes based on the p object
+            txtProductName.Text = p.name;
+            txtInventory.Text = p.qty.ToString();
+            txtRate.Text = p.rate.ToString();
         }
     }
 }

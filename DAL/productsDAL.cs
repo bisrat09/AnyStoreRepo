@@ -71,7 +71,7 @@ namespace AnyStore.DAL
                 cmd.Parameters.AddWithValue("@category", p.category);
                 cmd.Parameters.AddWithValue("@description", p.description);
                 cmd.Parameters.AddWithValue("@rate", p.rate);
-                cmd.Parameters.AddWithValue("@qty", p.rate);
+                cmd.Parameters.AddWithValue("@qty", p.qty);
                 cmd.Parameters.AddWithValue("@added_date", p.added_date);
                 cmd.Parameters.AddWithValue("@added_by", p.added_by);
 
@@ -117,7 +117,7 @@ namespace AnyStore.DAL
                 // create sql command the value to query
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@name", p.name);
-                cmd.Parameters.AddWithValue("@category", p.description);
+                cmd.Parameters.AddWithValue("@category", p.category);
                 cmd.Parameters.AddWithValue("@description",p.description);
                 cmd.Parameters.AddWithValue("@rate", p.rate);
                 cmd.Parameters.AddWithValue("@qty", p.rate);
@@ -231,6 +231,50 @@ namespace AnyStore.DAL
 
             return dt;
         }
+        #endregion
+        #region Method to search product in Transaction Module
+        public productsBLL GetProductsForTransaction(string keyword)
+        {
+            // create an object of productsBLL and return it
+            productsBLL p = new productsBLL();
+            // sql connection
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            // DataTable to store data temporarily
+            DataTable dt = new DataTable();
+            try
+            {
+                //Write the query to get the details
+                string sql = "select name, rate, qty from tbl_products where id like '%"+keyword+"%' or name like '%"+keyword+"%'";
+
+                // crete sql data adapter to excute query
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+
+                //open the db connection
+                conn.Open();
+                // pass the value from adapter to dt
+                adapter.Fill(dt);
+
+                //if data has any values ,then set the values to productBLL
+                if (dt.Rows.Count > 0)
+                {
+                    p.name = dt.Rows[0]["name"].ToString();
+                    p.rate = decimal.Parse(dt.Rows[0]["rate"].ToString());
+                    p.qty = decimal.Parse(dt.Rows[0]["qty"].ToString());
+                }
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return p;
+        } 
+
         #endregion
     }
 }

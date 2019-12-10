@@ -48,10 +48,10 @@
             this.lblDeaCustTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtQty = new System.Windows.Forms.TextBox();
+            this.txtRate = new System.Windows.Forms.TextBox();
+            this.txtInventory = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
             this.txtSearchProduct = new System.Windows.Forms.TextBox();
             this.lblInventory = new System.Windows.Forms.Label();
             this.lblRate = new System.Windows.Forms.Label();
@@ -262,10 +262,10 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtQty);
+            this.panel2.Controls.Add(this.txtRate);
+            this.panel2.Controls.Add(this.txtInventory);
+            this.panel2.Controls.Add(this.txtProductName);
             this.panel2.Controls.Add(this.txtSearchProduct);
             this.panel2.Controls.Add(this.lblInventory);
             this.panel2.Controls.Add(this.lblRate);
@@ -290,37 +290,37 @@
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // txtQty
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(1187, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(142, 30);
-            this.textBox2.TabIndex = 12;
+            this.txtQty.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQty.Location = new System.Drawing.Point(1187, 47);
+            this.txtQty.Name = "txtQty";
+            this.txtQty.Size = new System.Drawing.Size(142, 30);
+            this.txtQty.TabIndex = 12;
             // 
-            // textBox5
+            // txtRate
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(963, 48);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(160, 30);
-            this.textBox5.TabIndex = 11;
+            this.txtRate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRate.Location = new System.Drawing.Point(963, 48);
+            this.txtRate.Name = "txtRate";
+            this.txtRate.Size = new System.Drawing.Size(160, 30);
+            this.txtRate.TabIndex = 11;
             // 
-            // textBox4
+            // txtInventory
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(685, 46);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 30);
-            this.textBox4.TabIndex = 10;
+            this.txtInventory.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInventory.Location = new System.Drawing.Point(685, 46);
+            this.txtInventory.Name = "txtInventory";
+            this.txtInventory.Size = new System.Drawing.Size(167, 30);
+            this.txtInventory.TabIndex = 10;
             // 
-            // textBox3
+            // txtProductName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(382, 46);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 30);
-            this.textBox3.TabIndex = 9;
+            this.txtProductName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductName.Location = new System.Drawing.Point(382, 46);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(193, 30);
+            this.txtProductName.TabIndex = 9;
             // 
             // txtSearchProduct
             // 
@@ -329,6 +329,7 @@
             this.txtSearchProduct.Name = "txtSearchProduct";
             this.txtSearchProduct.Size = new System.Drawing.Size(191, 30);
             this.txtSearchProduct.TabIndex = 8;
+            this.txtSearchProduct.TextChanged += new System.EventHandler(this.txtSearchProduct_TextChanged);
             // 
             // lblInventory
             // 
@@ -627,10 +628,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtQty;
+        private System.Windows.Forms.TextBox txtRate;
+        private System.Windows.Forms.TextBox txtInventory;
+        private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.TextBox txtSearchProduct;
         private System.Windows.Forms.Label lblInventory;
         private System.Windows.Forms.Label lblRate;
