@@ -289,6 +289,7 @@
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtQty
             // 
@@ -504,6 +505,7 @@
             this.txtSubTotal.ReadOnly = true;
             this.txtSubTotal.Size = new System.Drawing.Size(428, 30);
             this.txtSubTotal.TabIndex = 7;
+            this.txtSubTotal.Text = "0";
             // 
             // lblReturnAmount
             // 
