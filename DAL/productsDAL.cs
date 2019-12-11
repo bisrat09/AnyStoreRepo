@@ -273,8 +273,49 @@ namespace AnyStore.DAL
                 conn.Close();
             }
             return p;
-        } 
+        }
 
+        #endregion
+        #region Method to get Product ID based on Product Name 
+        public productsBLL GetProductIDFromName(string ProductName)
+        {
+            // first create an obj of Deacust BLL and return it 
+            productsBLL p = new productsBLL();
+            // Sql Connection here 
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            // Data table to hold data temporarily
+            DataTable dt = new DataTable();
+
+            try
+            {
+                // sql query to get ID based oon name 
+                string sql = "select id from tbl_products where name='" + ProductName + "'";
+                // sql Data Adapter to excute query
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+
+                conn.Open();
+
+                // passing the value from adapter to data table 
+                adapter.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    //Pass the value from dt to DeaCustBLL dc
+                    p.id = int.Parse(dt.Rows[0]["id"].ToString());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return p;
+        }
         #endregion
     }
 }

@@ -28,7 +28,7 @@ namespace AnyStore.DAL
             try
             {
                 // SQL query to insert transaction 
-                string sql = "insert into tbl_transactions (type, dea_cust_id, grandTotal, transaction_date, tax, discount, added_by) values @type, @dea_cust_id, @grandTotal, @transaction_date, @tax, @discount, @added_by ";
+                string sql = "insert into tbl_transactions (type, dea_cust_id, grandTotal, transaction_date, tax, discount, added_by) values(@type, @dea_cust_id, @grandTotal, @transaction_date, @tax, @discount, @added_by); select @@IDENTITY;";
 
                 //sql command to pass the value in sql query
                 SqlCommand cmd = new SqlCommand(sql, conn);
