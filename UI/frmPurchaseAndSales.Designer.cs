@@ -65,9 +65,9 @@
             this.pnlCalculation = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtReturnAmount = new System.Windows.Forms.TextBox();
+            this.txtPaidAmount = new System.Windows.Forms.TextBox();
+            this.txtGrandTotal = new System.Windows.Forms.TextBox();
             this.txtDiscount = new System.Windows.Forms.TextBox();
-            this.txtgrandTotal = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.txtVat = new System.Windows.Forms.TextBox();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.lblReturnAmount = new System.Windows.Forms.Label();
@@ -425,9 +425,9 @@
             // 
             this.pnlCalculation.Controls.Add(this.btnSave);
             this.pnlCalculation.Controls.Add(this.txtReturnAmount);
+            this.pnlCalculation.Controls.Add(this.txtPaidAmount);
+            this.pnlCalculation.Controls.Add(this.txtGrandTotal);
             this.pnlCalculation.Controls.Add(this.txtDiscount);
-            this.pnlCalculation.Controls.Add(this.txtgrandTotal);
-            this.pnlCalculation.Controls.Add(this.textBox7);
             this.pnlCalculation.Controls.Add(this.txtVat);
             this.pnlCalculation.Controls.Add(this.txtSubTotal);
             this.pnlCalculation.Controls.Add(this.lblReturnAmount);
@@ -464,30 +464,31 @@
             this.txtReturnAmount.Size = new System.Drawing.Size(428, 47);
             this.txtReturnAmount.TabIndex = 12;
             // 
+            // txtPaidAmount
+            // 
+            this.txtPaidAmount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPaidAmount.Location = new System.Drawing.Point(163, 236);
+            this.txtPaidAmount.Name = "txtPaidAmount";
+            this.txtPaidAmount.Size = new System.Drawing.Size(428, 30);
+            this.txtPaidAmount.TabIndex = 11;
+            this.txtPaidAmount.TextChanged += new System.EventHandler(this.txtPaidAmount_TextChanged);
+            // 
+            // txtGrandTotal
+            // 
+            this.txtGrandTotal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrandTotal.Location = new System.Drawing.Point(163, 191);
+            this.txtGrandTotal.Name = "txtGrandTotal";
+            this.txtGrandTotal.Size = new System.Drawing.Size(428, 30);
+            this.txtGrandTotal.TabIndex = 10;
+            // 
             // txtDiscount
             // 
             this.txtDiscount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscount.Location = new System.Drawing.Point(163, 236);
+            this.txtDiscount.Location = new System.Drawing.Point(163, 86);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(428, 30);
-            this.txtDiscount.TabIndex = 11;
-            // 
-            // txtgrandTotal
-            // 
-            this.txtgrandTotal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgrandTotal.Location = new System.Drawing.Point(163, 191);
-            this.txtgrandTotal.Name = "txtgrandTotal";
-            this.txtgrandTotal.Size = new System.Drawing.Size(428, 30);
-            this.txtgrandTotal.TabIndex = 10;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(163, 86);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(428, 30);
-            this.textBox7.TabIndex = 9;
+            this.txtDiscount.TabIndex = 9;
+            this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
             // 
             // txtVat
             // 
@@ -496,6 +497,7 @@
             this.txtVat.Name = "txtVat";
             this.txtVat.Size = new System.Drawing.Size(428, 30);
             this.txtVat.TabIndex = 8;
+            this.txtVat.TextChanged += new System.EventHandler(this.txtVat_TextChanged);
             // 
             // txtSubTotal
             // 
@@ -647,9 +649,9 @@
         private System.Windows.Forms.Panel pnlCalculation;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtReturnAmount;
+        private System.Windows.Forms.TextBox txtPaidAmount;
+        private System.Windows.Forms.TextBox txtGrandTotal;
         private System.Windows.Forms.TextBox txtDiscount;
-        private System.Windows.Forms.TextBox txtgrandTotal;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox txtVat;
         private System.Windows.Forms.TextBox txtSubTotal;
         private System.Windows.Forms.Label lblReturnAmount;
