@@ -317,5 +317,159 @@ namespace AnyStore.DAL
             return p;
         }
         #endregion
+        #region Method to get current quantity from Database based on Product ID
+        public decimal GetProductQty(int ProductID)
+        {
+            // sql connection 
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            //create A decimal variable and set its default value to 0
+            decimal qty = 0;
+
+            // create a dataTable to save the data from database temporarily
+            DataTable dt = new DataTable();
+            try
+            {
+                // sql query to get Qty from database 
+                string sql = "select qty from tbl_products where id = " +ProductID;
+
+                // create sql command 
+                SqlCommand cmd = new SqlCommand();
+
+                // create a sql data Adapter to excute the query
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+
+                //open database connection
+                conn.Open();
+
+                // pass the value from data adapter to Datatable
+                adapter.Fill(dt);
+                // Lets check if the datatable has value or not
+                if (dt.Rows.Count > 0)
+                {
+                    qty = decimal.Parse(dt.Rows[0]["qty"].ToString());               
+                }
+
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                // close database connection
+                conn.Close();
+            }
+            return qty;
+        }
+        #endregion
+        #region Method to Update Quantity
+        public bool UpdateQuantity(int ProductID, decimal Qty)
+        {
+            // cretae a boolean variable and set it to false;
+            bool success = false;
+            // sql connection to connect to database 
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                // Write sql Query to update Qty
+                string sql = "Update tbl_products set qty=@qty where id=@id";
+                //Create SQL Command to pass the value in to the query
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                // passing the value through parameters
+                cmd.Parameters.AddWithValue("@qty", Qty);
+                cmd.Parameters.AddWithValue("@id", ProductID);
+
+                //oprn database connection
+                conn.Open();
+
+                // check if the query is excuted successfully
+                int rows = cmd.ExecuteNonQuery();
+                if( rows> 0)
+                {
+                    //Query excuted successfully
+                    success = true;
+                }
+                else
+                {
+                    //Failed to excute query
+                    success = false;
+                }
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return success;
+        }
+        #endregion
+        #region Method to Increase Product qty
+        public bool IncreaseProduct( int ProductID, decimal IncreaseQty)
+        {
+            //create a boolean variable and set it false 
+            bool success = false;
+            // create sql connection to connect to database
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                //Get current quantity from database based on id
+                decimal currentQty = GetProductQty(ProductID);
+
+                // increase the current qty by qty purchased from dealer
+                decimal NewQty = currentQty + IncreaseQty;
+
+                // Update the product qty now
+                success = UpdateQuantity(ProductID, NewQty);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return success;
+        }
+        #endregion
+        #region Method to Decrease product 
+        public bool DecreaseProduct(int ProductID, decimal Qty)
+        {
+            // create a boolean and set it to false 
+            bool success = false;
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            try
+            {
+                // get the current product qty
+                Decimal currentQty = GetProductQty(ProductID);
+
+                //Decrease the product Quantity based on product sales
+                decimal NewQty = currentQty - Qty;
+
+                //update the product in database
+                success = UpdateQuantity(ProductID, NewQty);
+
+
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return success;
+        }
+        #endregion
     }
 }

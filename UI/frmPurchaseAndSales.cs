@@ -250,9 +250,25 @@ namespace AnyStore.UI
                     transactionDetail.added_date = DateTime.Now;
                     transactionDetail.added_by = u.id;
 
+                    // increase/decrease product Quantity based on purchase or sells
+                    string transactionType = lblTop.Text;
+
+                    // check if we are on purchase or sales page 
+                    bool x = false ;
+                    if(transactionType== "Purchase")
+                    {
+                        // increase the product qty
+                         x = pDAL.IncreaseProduct(transactionDetail.product_id,transactionDetail.qty);
+
+                    }else if(transactionType == "Sales"){
+                        // decrease product quantity
+                         x = pDAL.DecreaseProduct(transactionDetail.product_id, transactionDetail.qty);
+
+                    }
+
                     //insert transaction details in the database 
                     bool y = tdDAL.InsertTransactionDetail(transactionDetail);
-                    success = w && y;
+                    success = w && x && y;
 
 
                 }
