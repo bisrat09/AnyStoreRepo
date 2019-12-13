@@ -12,7 +12,7 @@ This is a Billing and Inventory Management application using C# and MS SQL serve
 2. Category Module - Manages all the Category for products (Add New, Update and Delete Existing)
 3. Product Module - Manages all the Product (Add New, Update and Delete Existing)
 4. Purchase and Sales Module - Purchase Products from Dealer and Sell Products to Consumers
-5. Transactions Module - View the Products Purchased and Sold on Particula dates.
+5. Transactions Module - View the Products Purchased and Sold on specific dates.
 
 # Instructions to Use #
 1. Download or Clone the source code from Here: https://github.com/bisrat09/anystore/
