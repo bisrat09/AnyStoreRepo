@@ -61,5 +61,12 @@ namespace AnyStore
             frmTransactions transaction = new frmTransactions();
             transaction.Show();
         }
+
+        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // link the Admindashboard form to inventory form
+            frmInventory inventory = new frmInventory();
+            inventory.Show();
+        }
     }
 }
