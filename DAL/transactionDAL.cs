@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -72,6 +73,85 @@ namespace AnyStore.DAL
 
             return isSuccess;
 
+        }
+        #endregion
+        #region Method to display all the transaction
+        public DataTable DisplayAllTransactions()
+        {
+            //SqlConnection 
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            // Create DataTable and return it 
+            DataTable dt = new DataTable();
+            try
+            {
+                // Write the SQL query to display database temporarily
+                string sql = "select * from tbl_transactions";
+
+                // Sql command to excute Query
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                // sql adapter hold data temporarily
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                // open db connection
+                conn.Open();
+
+                adapter.Fill(dt);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+
+
+        }
+        #endregion
+        #region Method to display Transaction based on Transaction Type
+        public DataTable DisplayTransactionByType(string type)
+        {
+            // sql connection
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            // create a dataTable 
+            DataTable dt = new DataTable();
+            try
+            {
+                // create sql query
+                string sql = "select * from tbl_transactions where type='"+type+"'";
+                // sql command 
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                // adpater to hol
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                // open connection
+                conn.Open();
+
+                adapter.Fill(dt);
+
+
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            
+
+            
+
+            return dt;
         }
         #endregion
     }

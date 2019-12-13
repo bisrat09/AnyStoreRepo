@@ -57,13 +57,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1194, 40);
+            this.panel1.Size = new System.Drawing.Size(1357, 40);
             this.panel1.TabIndex = 0;
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-            this.pictureBoxClose.Location = new System.Drawing.Point(1164, 3);
+            this.pictureBoxClose.Location = new System.Drawing.Point(1327, 3);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(27, 28);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +184,7 @@
             this.dgvCategories.Name = "dgvCategories";
             this.dgvCategories.RowHeadersWidth = 51;
             this.dgvCategories.RowTemplate.Height = 24;
-            this.dgvCategories.Size = new System.Drawing.Size(503, 169);
+            this.dgvCategories.Size = new System.Drawing.Size(743, 169);
             this.dgvCategories.TabIndex = 10;
             this.dgvCategories.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCategories_RowHeaderMouseClick);
             // 
@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1194, 434);
+            this.ClientSize = new System.Drawing.Size(1357, 434);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.dgvCategories);

@@ -26,3 +26,4 @@ C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmCat
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmProducts.resources
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmDeaCust.resources
 C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmPurchaseAndSales.resources
+C:\Users\bisrat\Desktop\CSharpProjects\AnyStoreRepo\obj\Debug\AnyStore.UI.frmTransactions.resources
