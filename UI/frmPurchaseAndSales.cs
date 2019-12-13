@@ -1,5 +1,6 @@
 ﻿using AnyStore.BLL;
 using AnyStore.DAL;
+using DGVPrinterHelper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -277,6 +278,23 @@ namespace AnyStore.UI
                 {
                     //Transaction complete
                     scope.Complete();
+
+                    // print the bill
+                    DGVPrinter printer = new DGVPrinter();
+
+                    printer.Title = "\r\n\r\n\r\n SOPHIE'S STORE PVT. LTD. \r\n\r\n";
+                    printer.SubTitle = "Bellevue, Washington \r\n Phone: 425-xxx-xxxx \r\n\r\n";
+                    printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+                    printer.PageNumbers = true;
+                    printer.PageNumberInHeader = false;
+                    printer.PorportionalColumns = true;
+                    printer.HeaderCellAlignment = StringAlignment.Near;
+                    printer.Footer = "Discount: " + txtDiscount.Text + "% \r\n" + "VAT: " + txtVat.Text + "%\r\n" + "Grand Total:  "+txtGrandTotal.Text + "\r\n" + "Thank you for doing buisness with us!";
+                    printer.FooterSpacing = 15;
+                    printer.PrintDataGridView(dgvAddedProducts);
+
+
+
                     MessageBox.Show("Transaction completed Successfully.");
                     //clear the data grid view and text boxes 
                     dgvAddedProducts.DataSource = null;
