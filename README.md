@@ -15,7 +15,7 @@ This is a Billing and Inventory Management application using C# and MS SQL serve
 5. Transactions Module - View the Products Purchased and Sold on specific dates.
 
 # Instructions to Use #
-1. Download or Clone the source code from Here: https://github.com/bisrat09/anystore/
+1. Download or Clone the source code from Here: https://github.com/bisrat09/AnyStoreRepo/
 2. Extract the Database and restore
 3. Open the solution file in visual studio (If you can't open, try deleting the folder with '.vs/something')
 
