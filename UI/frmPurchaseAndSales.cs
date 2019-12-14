@@ -191,7 +191,7 @@ namespace AnyStore.UI
         private void txtPaidAmount_TextChanged(object sender, EventArgs e)
         {
             // get the paidAmount and Grand Total
-            decimal grandTotal = decimal.Parse(txtGrandTotal.Text);
+            decimal grandTotal = Math.Round(decimal.Parse(txtGrandTotal.Text), 2);
             decimal paidAmount = decimal.Parse(txtPaidAmount.Text);
 
             // display the return amount 
@@ -289,7 +289,10 @@ namespace AnyStore.UI
                     printer.PageNumberInHeader = false;
                     printer.PorportionalColumns = true;
                     printer.HeaderCellAlignment = StringAlignment.Near;
-                    printer.Footer = "Discount: " + txtDiscount.Text + "% \r\n" + "VAT: " + txtVat.Text + "%\r\n" + "Grand Total:  "+txtGrandTotal.Text + "\r\n" + "Thank you for doing buisness with us!";
+
+                    //limit grand total to 2 decimal values 
+                    decimal GTTwoDecimal = Math.Round(decimal.Parse(txtGrandTotal.Text), 2);
+                    printer.Footer = "Discount: " + txtDiscount.Text + "% \r\n" + "VAT: " + txtVat.Text + "%\r\n" + "Grand Total:  "+GTTwoDecimal.ToString() + "\r\n" + "Thank you for doing buisness with us!";
                     printer.FooterSpacing = 15;
                     printer.PrintDataGridView(dgvAddedProducts);
 

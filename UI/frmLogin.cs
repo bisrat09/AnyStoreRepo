@@ -32,7 +32,7 @@ namespace AnyStore.UI
         private void btnLogin_Click(object sender, EventArgs e)
         {
             l.username = txtUsername.Text.Trim();
-            l.password = txtUsername.Text.Trim();
+            l.password = txtPassword.Text.Trim();
             l.user_type = cmbUserType.Text.Trim();
 
             //checking the login credentials
@@ -78,6 +78,11 @@ namespace AnyStore.UI
                 MessageBox.Show("Login Failed. Try Again");
 
             }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
