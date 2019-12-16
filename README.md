@@ -4,7 +4,7 @@ This is a Billing and Inventory Management application using C# and MS SQL serve
 # Tools And Technologies #
 1. C# programming language in 3-tier architecture
 2. MS SQL Server 2017
-3. Microsoft Visual Studio 2015 (IDE)
+3. Microsoft Visual Studio 2019 (IDE)
 4. Git & Github (Version Control)
 
 # Modules And Features #
