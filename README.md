@@ -1,10 +1,10 @@
-# AnyStore C# Desktop App #
+# SophieStore C# Desktop App #
 This is a Billing and Inventory Management application using C# and MS SQL server
 
 # Tools And Technologies #
 1. C# programming language in 3-tier architecture
-2. MS SQL Server 2014
-3. Microsoft Visual Studio 2015 (IDE)
+2. MS SQL Server 2017
+3. Microsoft Visual Studio 2019 (IDE)
 4. Git & Github (Version Control)
 
 # Modules And Features #
@@ -15,7 +15,7 @@ This is a Billing and Inventory Management application using C# and MS SQL serve
 5. Transactions Module - View the Products Purchased and Sold on specific dates.
 
 # Instructions to Use #
-1. Download or Clone the source code from Here: https://github.com/bisrat09/AnyStoreRepo/
+1. Download or Clone the source code from Here: https://github.com/bisrat09/SophieStore/
 2. Extract the Database and restore
 3. Open the solution file in visual studio (If you can't open, try deleting the folder with '.vs/something')
 
